@@ -14,9 +14,9 @@ Il est nécessaire de prendre 403 ko dans les archives.
 Après cette opération, 1 032 ko d'espace disque supplémentaires seront utilisés.
 Réception de :1 http://deb.debian.org/debian bullseye/main amd64 unzip amd64 6.0-26 [171 kB]
 Réception de :2 http://deb.debian.org/debian bullseye/main amd64 zip amd64 3.0-12 [232 kB]
-403 ko réceptionnés en 0s (3 398 ko/s)
+403 ko réceptionnés en 0s (2 017 ko/s)
 Sélection du paquet unzip précédemment désélectionné.
-(Lecture de la base de données... (Lecture de la base de données... 5%(Lecture de la base de données... 10%(Lecture de la base de données... 15%(Lecture de la base de données... 20%(Lecture de la base de données... 25%(Lecture de la base de données... 30%(Lecture de la base de données... 35%(Lecture de la base de données... 40%(Lecture de la base de données... 45%(Lecture de la base de données... 50%(Lecture de la base de données... 55%(Lecture de la base de données... 60%(Lecture de la base de données... 65%(Lecture de la base de données... 70%(Lecture de la base de données... 75%(Lecture de la base de données... 80%(Lecture de la base de données... 85%(Lecture de la base de données... 90%(Lecture de la base de données... 95%(Lecture de la base de données... 100%(Lecture de la base de données... 36344 fichiers et répertoires déjà installés.)
+(Lecture de la base de données... (Lecture de la base de données... 5%(Lecture de la base de données... 10%(Lecture de la base de données... 15%(Lecture de la base de données... 20%(Lecture de la base de données... 25%(Lecture de la base de données... 30%(Lecture de la base de données... 35%(Lecture de la base de données... 40%(Lecture de la base de données... 45%(Lecture de la base de données... 50%(Lecture de la base de données... 55%(Lecture de la base de données... 60%(Lecture de la base de données... 65%(Lecture de la base de données... 70%(Lecture de la base de données... 75%(Lecture de la base de données... 80%(Lecture de la base de données... 85%(Lecture de la base de données... 90%(Lecture de la base de données... 95%(Lecture de la base de données... 100%(Lecture de la base de données... 36368 fichiers et répertoires déjà installés.)
 Préparation du dépaquetage de .../unzip_6.0-26_amd64.deb ...
 Dépaquetage de unzip (6.0-26) ...
 Sélection du paquet zip précédemment désélectionné.
@@ -26,126 +26,3 @@ Paramétrage de unzip (6.0-26) ...
 Paramétrage de zip (3.0-12) ...
 Traitement des actions différées (« triggers ») pour man-db (2.9.4-2) ...
 Traitement des actions différées (« triggers ») pour mailcap (3.69) ...
-
-WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
-
-Lecture des listes de paquets…
-Construction de l'arbre des dépendances…
-Lecture des informations d'état…
-Les paquets supplémentaires suivants seront installés : 
-  apache2-bin apache2-data apache2-utils libapr1 libaprutil1
-  libaprutil1-dbd-sqlite3 libaprutil1-ldap libcurl4 liblua5.3-0 ssl-cert
-Paquets suggérés :
-  apache2-doc apache2-suexec-pristine | apache2-suexec-custom www-browser
-Les NOUVEAUX paquets suivants seront installés :
-  apache2 apache2-bin apache2-data apache2-utils libapr1 libaprutil1
-  libaprutil1-dbd-sqlite3 libaprutil1-ldap libcurl4 liblua5.3-0 ssl-cert
-0 mis à jour, 11 nouvellement installés, 0 à enlever et 0 non mis à jour.
-Il est nécessaire de prendre 2 817 ko dans les archives.
-Après cette opération, 9 184 ko d'espace disque supplémentaires seront utilisés.
-Réception de :1 http://security.debian.org/debian-security bullseye-security/main amd64 apache2-bin amd64 2.4.52-1~deb11u2 [1 413 kB]
-Réception de :2 http://deb.debian.org/debian bullseye/main amd64 libapr1 amd64 1.7.0-6+deb11u1 [106 kB]
-Réception de :3 http://deb.debian.org/debian bullseye/main amd64 libaprutil1 amd64 1.6.1-5 [92,1 kB]
-Réception de :4 http://deb.debian.org/debian bullseye/main amd64 libaprutil1-dbd-sqlite3 amd64 1.6.1-5 [18,8 kB]
-Réception de :5 http://deb.debian.org/debian bullseye/main amd64 libaprutil1-ldap amd64 1.6.1-5 [17,0 kB]
-Réception de :6 http://deb.debian.org/debian bullseye/main amd64 libcurl4 amd64 7.74.0-1.3+deb11u1 [341 kB]
-Réception de :7 http://deb.debian.org/debian bullseye/main amd64 liblua5.3-0 amd64 5.3.3-1.1+b1 [120 kB]
-Réception de :8 http://deb.debian.org/debian bullseye/main amd64 ssl-cert all 1.1.0+nmu1 [21,0 kB]
-Réception de :9 http://security.debian.org/debian-security bullseye-security/main amd64 apache2-data all 2.4.52-1~deb11u2 [160 kB]
-Réception de :10 http://security.debian.org/debian-security bullseye-security/main amd64 apache2-utils amd64 2.4.52-1~deb11u2 [257 kB]
-Réception de :11 http://security.debian.org/debian-security bullseye-security/main amd64 apache2 amd64 2.4.52-1~deb11u2 [272 kB]
-Préconfiguration des paquets...
-2 817 ko réceptionnés en 21s (133 ko/s)
-Sélection du paquet libapr1:amd64 précédemment désélectionné.
-(Lecture de la base de données... (Lecture de la base de données... 5%(Lecture de la base de données... 10%(Lecture de la base de données... 15%(Lecture de la base de données... 20%(Lecture de la base de données... 25%(Lecture de la base de données... 30%(Lecture de la base de données... 35%(Lecture de la base de données... 40%(Lecture de la base de données... 45%(Lecture de la base de données... 50%(Lecture de la base de données... 55%(Lecture de la base de données... 60%(Lecture de la base de données... 65%(Lecture de la base de données... 70%(Lecture de la base de données... 75%(Lecture de la base de données... 80%(Lecture de la base de données... 85%(Lecture de la base de données... 90%(Lecture de la base de données... 95%(Lecture de la base de données... 100%(Lecture de la base de données... 36377 fichiers et répertoires déjà installés.)
-Préparation du dépaquetage de .../00-libapr1_1.7.0-6+deb11u1_amd64.deb ...
-Dépaquetage de libapr1:amd64 (1.7.0-6+deb11u1) ...
-Sélection du paquet libaprutil1:amd64 précédemment désélectionné.
-Préparation du dépaquetage de .../01-libaprutil1_1.6.1-5_amd64.deb ...
-Dépaquetage de libaprutil1:amd64 (1.6.1-5) ...
-Sélection du paquet libaprutil1-dbd-sqlite3:amd64 précédemment désélectionné.
-Préparation du dépaquetage de .../02-libaprutil1-dbd-sqlite3_1.6.1-5_amd64.deb ...
-Dépaquetage de libaprutil1-dbd-sqlite3:amd64 (1.6.1-5) ...
-Sélection du paquet libaprutil1-ldap:amd64 précédemment désélectionné.
-Préparation du dépaquetage de .../03-libaprutil1-ldap_1.6.1-5_amd64.deb ...
-Dépaquetage de libaprutil1-ldap:amd64 (1.6.1-5) ...
-Sélection du paquet libcurl4:amd64 précédemment désélectionné.
-Préparation du dépaquetage de .../04-libcurl4_7.74.0-1.3+deb11u1_amd64.deb ...
-Dépaquetage de libcurl4:amd64 (7.74.0-1.3+deb11u1) ...
-Sélection du paquet liblua5.3-0:amd64 précédemment désélectionné.
-Préparation du dépaquetage de .../05-liblua5.3-0_5.3.3-1.1+b1_amd64.deb ...
-Dépaquetage de liblua5.3-0:amd64 (5.3.3-1.1+b1) ...
-Sélection du paquet apache2-bin précédemment désélectionné.
-Préparation du dépaquetage de .../06-apache2-bin_2.4.52-1~deb11u2_amd64.deb ...
-Dépaquetage de apache2-bin (2.4.52-1~deb11u2) ...
-Sélection du paquet apache2-data précédemment désélectionné.
-Préparation du dépaquetage de .../07-apache2-data_2.4.52-1~deb11u2_all.deb ...
-Dépaquetage de apache2-data (2.4.52-1~deb11u2) ...
-Sélection du paquet apache2-utils précédemment désélectionné.
-Préparation du dépaquetage de .../08-apache2-utils_2.4.52-1~deb11u2_amd64.deb ...
-Dépaquetage de apache2-utils (2.4.52-1~deb11u2) ...
-Sélection du paquet apache2 précédemment désélectionné.
-Préparation du dépaquetage de .../09-apache2_2.4.52-1~deb11u2_amd64.deb ...
-Dépaquetage de apache2 (2.4.52-1~deb11u2) ...
-Sélection du paquet ssl-cert précédemment désélectionné.
-Préparation du dépaquetage de .../10-ssl-cert_1.1.0+nmu1_all.deb ...
-Dépaquetage de ssl-cert (1.1.0+nmu1) ...
-Paramétrage de libapr1:amd64 (1.7.0-6+deb11u1) ...
-Paramétrage de ssl-cert (1.1.0+nmu1) ...
-Paramétrage de liblua5.3-0:amd64 (5.3.3-1.1+b1) ...
-Paramétrage de libcurl4:amd64 (7.74.0-1.3+deb11u1) ...
-Paramétrage de apache2-data (2.4.52-1~deb11u2) ...
-Paramétrage de libaprutil1:amd64 (1.6.1-5) ...
-Paramétrage de libaprutil1-ldap:amd64 (1.6.1-5) ...
-Paramétrage de libaprutil1-dbd-sqlite3:amd64 (1.6.1-5) ...
-Paramétrage de apache2-utils (2.4.52-1~deb11u2) ...
-Paramétrage de apache2-bin (2.4.52-1~deb11u2) ...
-Paramétrage de apache2 (2.4.52-1~deb11u2) ...
-Enabling module mpm_event.
-Enabling module authz_core.
-Enabling module authz_host.
-Enabling module authn_core.
-Enabling module auth_basic.
-Enabling module access_compat.
-Enabling module authn_file.
-Enabling module authz_user.
-Enabling module alias.
-Enabling module dir.
-Enabling module autoindex.
-Enabling module env.
-Enabling module mime.
-Enabling module negotiation.
-Enabling module setenvif.
-Enabling module filter.
-Enabling module deflate.
-Enabling module status.
-Enabling module reqtimeout.
-Enabling conf charset.
-Enabling conf localized-error-pages.
-Enabling conf other-vhosts-access-log.
-Enabling conf security.
-Enabling conf serve-cgi-bin.
-Enabling site 000-default.
-Created symlink /etc/systemd/system/multi-user.target.wants/apache2.service → /lib/systemd/system/apache2.service.
-Created symlink /etc/systemd/system/multi-user.target.wants/apache-htcacheclean.service → /lib/systemd/system/apache-htcacheclean.service.
-Traitement des actions différées (« triggers ») pour man-db (2.9.4-2) ...
-Traitement des actions différées (« triggers ») pour libc-bin (2.31-13+deb11u2) ...
-Synchronizing state of apache2.service with SysV service script with /lib/systemd/systemd-sysv-install.
-Executing: /lib/systemd/systemd-sysv-install enable apache2
-ERROR: Module gzip does not exist!
-Enabling module headers.
-To activate the new configuration, you need to run:
-  systemctl restart apache2
-Enabling module rewrite.
-To activate the new configuration, you need to run:
-  systemctl restart apache2
-Considering dependency setenvif for ssl:
-Module setenvif already enabled
-Considering dependency mime for ssl:
-Module mime already enabled
-Considering dependency socache_shmcb for ssl:
-Enabling module socache_shmcb.
-Enabling module ssl.
-See /usr/share/doc/apache2/README.Debian.gz on how to configure SSL and create self-signed certificates.
-To activate the new configuration, you need to run:
-  systemctl restart apache2

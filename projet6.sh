@@ -87,11 +87,11 @@ else
 fi
 
 #Vérification si wordpress a été dèja télécharger
-	if [ -f /tmp/wp/latest.zip ]; then
+	if [ -f /tmp/wp/latest* ]; then
 		echo "La dernière version de WP est dèja téléchargée ..."
 		echo
 	else
-		echo "Téléchargement de la dernière version de wordpress en cours ..."
+		echo "Wordpress n'existe pas, lancement du téléchargement en cours  ..."
 		wget https://wordpress.org/latest.zip >> install.log 2>&1
 		echo
 	fi
@@ -111,12 +111,6 @@ echo "installation php-pdo php-mysql php-zip php-gd php-mbstring php-curl php-xm
 apt install php-pdo php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmatch -y >> install.log 2>&1
 echo
 
-version=$(php -v)
-
-echo "La version de php installée est la : $version"
-
-echo
-
 #Installation de MariaDB
 if [ -x /usr/bin/mariadb ]; then 
 	echo "Le serveur MariaDB est dèja installé sur le système ..."
@@ -127,11 +121,6 @@ else
 	echo
 fi
 
-# Lancement de mariadb_secure_installation
-#echo "sécurisation du serveur Mariadb-serveur avec le script mariadb-secure-installation ..."
-#mariadb-secure-installation
-#echo
-
 #Autoriser mariadb a démarrer avec le boot du système
 echo "Mariadb startup OK ..."
 systemctl enable mariadb >> install.log 2>&1
@@ -141,8 +130,43 @@ echo "reboot mariadb OK ..."
 systemctl restart mariadb
 echo
 
+# Automatisation des réponses au script mariadb_secure_installation
+
+echo "install expect"
+apt -y install expect >> install.log 2>&1
+echo
+
+MYSQL_ROOT_PASSWORD=123456
+
+SECURE_MYSQL=$(expect -c "
+set timeout 10
+spawn mysql_secure_installation
+expect \"Enter current password for root (enter for none):\"
+send \"$MYSQL_ROOT_PASSWORD\"
+expect \"Change the root password?\"
+send \"n\r\"
+expect \"Remove anonymous users?\"
+send \"y\r\"
+expect \"Disallow root login remotely?\"
+send \"y\r\"
+expect \"Remove test database and access to it?\"
+send \"y\r\"
+expect \"Reload privilege tables now?\"
+send \"y\r\"
+expect EOF
+")
+
+echo "purge expect"
+apt -y purge expect >> install.log 2>&1
+echo
 
 
+# Création de la BDD pour l'installation de wordpress
+passBDD="toor"
+
+mariadb -u root -p$passBDD < EOF
+CREATE DATABASE wp_smail_projet6;
+EOF
 
 
 echo "fin du script"
