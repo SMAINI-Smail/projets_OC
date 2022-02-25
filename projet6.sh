@@ -101,15 +101,10 @@ if [ -x /usr/bin/php ]; then
 	echo "php est dèja installé sur le serveur ..."
 	echo
 else
-	echo "Installation de PHP en cours ..."
-	apt install php -y >> install.log 2>&1
+	echo "Installation de PHP et des modules php-pdo php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmatch en cours ..."
+	apt install php php-pdo php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmatch -y >> install.log 2>&1
 	echo
 fi
-
-#Installation de modules complémentaires pour php
-echo "installation php-pdo php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmatch en cours ..."
-apt install php-pdo php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmatch -y >> install.log 2>&1
-echo
 
 #Installation de MariaDB
 if [ -x /usr/bin/mariadb ]; then 
@@ -131,8 +126,12 @@ systemctl restart mariadb
 echo
 
 # Automatisation des réponses au script mariadb_secure_installation
-
-echo "install expect"
+if [ -x /usr/bin/expect ]
+then 
+	echo "expect est dèja installer ..."
+	echo
+else
+echo "installation de expect en cours ..."
 apt -y install expect >> install.log 2>&1
 echo
 
@@ -156,17 +155,10 @@ send \"y\r\"
 expect EOF
 ")
 
-echo "purge expect"
-apt -y purge expect >> install.log 2>&1
-echo
-
-
 # Création de la BDD pour l'installation de wordpress
-passBDD="toor"
 
-mariadb -u root -p$passBDD < EOF
-CREATE DATABASE wp_smail_projet6;
-EOF
-
+mariadb -e "CREATE DATABASE wp_smail_projet6;"
+echo "création ok"
+mariadb -e "show databases;"
 
 echo "fin du script"
