@@ -19,8 +19,9 @@ Les paquets suivants ont été installés automatiquement et ne sont plus néces
   libencode-locale-perl libfcgi-bin libfcgi-perl libfcgi0ldbl
   libhtml-parser-perl libhtml-tagset-perl libhtml-template-perl
   libhttp-date-perl libhttp-message-perl libio-html-perl liblua5.3-0
-  liblwp-mediatypes-perl libmariadb3 libsnappy1v5 libterm-readkey-perl
-  libtimedate-perl liburi-perl mariadb-client-10.5 mariadb-client-core-10.5
+  liblwp-mediatypes-perl libmariadb3 libsnappy1v5 libsodium23
+  libterm-readkey-perl libtimedate-perl liburi-perl
+  linux-image-5.10.0-10-amd64 mariadb-client-10.5 mariadb-client-core-10.5
   mariadb-common mysql-common rsync socat ssl-cert unzip
 Veuillez utiliser « apt autoremove » pour les supprimer.
 0 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
@@ -38,8 +39,9 @@ Les paquets suivants ont été installés automatiquement et ne sont plus néces
   libencode-locale-perl libfcgi-bin libfcgi-perl libfcgi0ldbl
   libhtml-parser-perl libhtml-tagset-perl libhtml-template-perl
   libhttp-date-perl libhttp-message-perl libio-html-perl liblua5.3-0
-  liblwp-mediatypes-perl libmariadb3 libsnappy1v5 libterm-readkey-perl
-  libtimedate-perl liburi-perl mariadb-client-10.5 mariadb-client-core-10.5
+  liblwp-mediatypes-perl libmariadb3 libsnappy1v5 libsodium23
+  libterm-readkey-perl libtimedate-perl liburi-perl
+  linux-image-5.10.0-10-amd64 mariadb-client-10.5 mariadb-client-core-10.5
   mariadb-common mysql-common rsync socat ssl-cert unzip
 Veuillez utiliser « apt autoremove » pour les supprimer.
 0 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
@@ -56,12 +58,13 @@ Les paquets suivants seront ENLEVÉS :
   libencode-locale-perl libfcgi-bin libfcgi-perl libfcgi0ldbl
   libhtml-parser-perl libhtml-tagset-perl libhtml-template-perl
   libhttp-date-perl libhttp-message-perl libio-html-perl liblua5.3-0
-  liblwp-mediatypes-perl libmariadb3 libsnappy1v5 libterm-readkey-perl
-  libtimedate-perl liburi-perl mariadb-client-10.5 mariadb-client-core-10.5
+  liblwp-mediatypes-perl libmariadb3 libsnappy1v5 libsodium23
+  libterm-readkey-perl libtimedate-perl liburi-perl
+  linux-image-5.10.0-10-amd64 mariadb-client-10.5 mariadb-client-core-10.5
   mariadb-common mysql-common rsync socat ssl-cert unzip
-0 mis à jour, 0 nouvellement installés, 38 à enlever et 0 non mis à jour.
-Après cette opération, 48,3 Mo d'espace disque seront libérés.
-(Lecture de la base de données... (Lecture de la base de données... 5%(Lecture de la base de données... 10%(Lecture de la base de données... 15%(Lecture de la base de données... 20%(Lecture de la base de données... 25%(Lecture de la base de données... 30%(Lecture de la base de données... 35%(Lecture de la base de données... 40%(Lecture de la base de données... 45%(Lecture de la base de données... 50%(Lecture de la base de données... 55%(Lecture de la base de données... 60%(Lecture de la base de données... 65%(Lecture de la base de données... 70%(Lecture de la base de données... 75%(Lecture de la base de données... 80%(Lecture de la base de données... 85%(Lecture de la base de données... 90%(Lecture de la base de données... 95%(Lecture de la base de données... 100%(Lecture de la base de données... 37156 fichiers et répertoires déjà installés.)
+0 mis à jour, 0 nouvellement installés, 40 à enlever et 0 non mis à jour.
+Après cette opération, 350 Mo d'espace disque seront libérés.
+(Lecture de la base de données... (Lecture de la base de données... 5%(Lecture de la base de données... 10%(Lecture de la base de données... 15%(Lecture de la base de données... 20%(Lecture de la base de données... 25%(Lecture de la base de données... 30%(Lecture de la base de données... 35%(Lecture de la base de données... 40%(Lecture de la base de données... 45%(Lecture de la base de données... 50%(Lecture de la base de données... 55%(Lecture de la base de données... 60%(Lecture de la base de données... 65%(Lecture de la base de données... 70%(Lecture de la base de données... 75%(Lecture de la base de données... 80%(Lecture de la base de données... 85%(Lecture de la base de données... 90%(Lecture de la base de données... 95%(Lecture de la base de données... 100%(Lecture de la base de données... 41936 fichiers et répertoires déjà installés.)
 Suppression de galera-4 (26.4.9-0+deb11u1) ...
 Suppression de libaio1:amd64 (0.3.112-9) ...
 Suppression de libaprutil1-ldap:amd64 (1.6.1-5) ...
@@ -91,9 +94,20 @@ Suppression de liblwp-mediatypes-perl (6.04-1) ...
 Suppression de mariadb-client-core-10.5 (1:10.5.12-0+deb11u1) ...
 Suppression de libmariadb3:amd64 (1:10.5.12-0+deb11u1) ...
 Suppression de libsnappy1v5:amd64 (1.1.8-1) ...
+Suppression de libsodium23:amd64 (1.0.18-1) ...
 Suppression de libterm-readkey-perl (2.38-1+b2) ...
 Suppression de libtimedate-perl (2.3300-2) ...
 Suppression de liburi-perl (5.08-1) ...
+Suppression de linux-image-5.10.0-10-amd64 (5.10.84-1) ...
+/etc/kernel/postrm.d/initramfs-tools:
+update-initramfs: Deleting /boot/initrd.img-5.10.0-10-amd64
+/etc/kernel/postrm.d/zz-update-grub:
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-5.10.0-12-amd64
+Found initrd image: /boot/initrd.img-5.10.0-12-amd64
+Found linux image: /boot/vmlinuz-5.10.0-11-amd64
+Found initrd image: /boot/initrd.img-5.10.0-11-amd64
+done
 Suppression de mariadb-common (1:10.5.12-0+deb11u1) ...
 update-alternatives: utilisation de « /etc/mysql/my.cnf.fallback » pour fournir « /etc/mysql/my.cnf » (my.cnf) en mode automatique
 Suppression de mysql-common (5.8+1.0.7) ...
